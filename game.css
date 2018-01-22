@@ -15,6 +15,8 @@ html,body {
 .absolute {position: absolute;
 }
 
+#dragger {display: inline-block; position: absolute;}
+
 .turkey {
 	padding-left: 10vw;
 	width: 85vw;
@@ -39,16 +41,21 @@ html,body {
 .col6 {width:calc(100vw);}
 
 .position {
+    width: 100vw;
+    height: 20vh;
+    background-color: grey;
 	padding-left: 5vw;
 }
 
 .liberty {
 	width: 15vw;
-	height: 14vw;
+	height: 15vw;
 	background-image: url(img/liberty.png);
 	background-size: 100% ;
-	background-repeat: no-repeat;	
-	background-color: transparent;
+	background-repeat: no-repeat;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
 }
 .fernsehturm {
 	width: 15vw;
@@ -56,8 +63,9 @@ html,body {
 	background-image: url(img/fernsehturm.png);
 	background-size: 100% ;
 	background-repeat: no-repeat;
-	background-color: transparent;
-}
+    position: absolute;
+    left: 25vw;
+    top: 5vh;}
 .pisa {
 	width: 15vw;
 	height: 14vw;

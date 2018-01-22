@@ -6,16 +6,76 @@
 		<meta charset="utf-8">
 		<link href="game.css" rel="stylesheet" type="text/css">
 		
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        
+        
+        
+         <script>
+                  $( function() {
+                    var $start_counter = $( "#event-start" ),
+                      $drag_counter = $( "#event-drag" ),
+                      $stop_counter = $( "#event-stop" ),
+                      counts = [ 0, 0, 0 ];
+
+                    $( ".dragger" ).draggable({
+                      start: function() {
+                        
+                        counts[ 0 ]++;
+                        updateCounterStatus( $start_counter, counts[ 0 ] );
+                      },
+                      drag: function() {
+                        counts[ 1 ]++;
+                        updateCounterStatus( $drag_counter, counts[ 1 ] );
+                      },
+                      stop: function() {
+                        
+                          // your code here.... für prüfen ob richtig?
+                        console.log('losgelassen');
+                        
+                          
+                        //$(this).remove();  // entfernt das draggende Elemente
+                        $('#esp').removeClass('st0').addClass('st1');
+                          $(this).animate({left: "5vw",top: "5vh"},1000,'swing');
+                          
+                          
+                        counts[ 2 ]++;
+                        updateCounterStatus( $stop_counter, counts[ 2 ] );
+                      }
+                    });
+
+                    function updateCounterStatus( $event_counter, new_count ) {
+                      // first update the status visually...
+                      if ( !$event_counter.hasClass( "ui-state-hover" ) ) {
+                        $event_counter.addClass( "ui-state-hover" )
+                          .siblings().removeClass( "ui-state-hover" );
+                      }
+                      // ...then update the numbers
+                      $( "span.count", $event_counter ).text( new_count );
+                    }
+                  } );
+        </script>
+        
+        
+        
+        
     </head>
 	
 	<body>
 		
 	 <section class="position">
-		 <button class="height2 col2 liberty"></button>
-		 <button class="height3 col3 fernsehturm"></button>
-		 <button class="height4 col4 pisa"></button>
-		 <button class="height5 col5 richtig1"></button>
-		 <button class="height6 col6 richtig2"></button>
+		 <div id="dragger" class="dragger height2 col2 liberty">zieh mich</div>
+        <div id="dragger2" class="dragger height3 col3 fernsehturm"></div>
+<!--
+		 <div id="dragger" class="height4 col4 pisa"></div>
+		 <div id="dragger" class="height5 col5 richtig1"></div>
+		 <div id="dragger" class="height6 col6 richtig2"></div>
+-->
 	</section>
 		
 		<div class=" turkey">
@@ -28,12 +88,7 @@
 		<button2 class="absolute pfeillinks">		</button2>
 		<button2 class="absolute pfeilrechts"></button2>
 		
-	
-	
-	
-	
-	
-	
+
 	</body>
 	
 <html/>
