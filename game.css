@@ -1,0 +1,118 @@
+@font-face {
+	font-family: maybe;
+	src: url(fonts/MaybeMaybeNot.ttf);
+}
+
+html,body {
+	font-family: 'maybe',arial,sans-serif	;
+	background-color: #cccccc;
+	background-image: url(img/wellen.png);
+	margin: 0;
+	background-size: cover;
+	background-position: center center;
+}
+
+.absolute {position: absolute;
+}
+
+.turkey {
+	padding-left: 10vw;
+	width: 85vw;
+	height: 50vw;
+	background-image: url(img/turkey1.png);
+	background-size: 100%, cover;
+	background-position: center, center;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+.height2 {height:calc(100vh/8*2);}
+.height3 {height:calc(100vh/8*3);}
+.height4 {height:calc(100vh/8*4);}
+.height5 {height:calc(100vh/8*5);}
+.height6 {height:calc(100vh);}
+
+.col2 {width:calc(100vw/5*2);}
+.col3 {width:calc(100vw/5*3);}
+.col4 {width:calc(100vw/5*4);}
+.col5 {width:calc(100vw/5*5);}
+.col6 {width:calc(100vw);}
+
+.position {
+	padding-left: 5vw;
+}
+
+.liberty {
+	width: 15vw;
+	height: 14vw;
+	background-image: url(img/liberty.png);
+	background-size: 100% ;
+	background-repeat: no-repeat;	
+	background-color: transparent;
+}
+.fernsehturm {
+	width: 15vw;
+	height: 14vw;
+	background-image: url(img/fernsehturm.png);
+	background-size: 100% ;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+.pisa {
+	width: 15vw;
+	height: 14vw;
+	background-image: url(img/pisa.png);
+	background-size: 100% ;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+.richtig1 {
+	width: 15vw;
+	height: 14vw;
+	background-image: url(img/richtig1.png);
+	background-size: 100% ;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+.richtig2 {
+	width: 15vw;
+	height: 14vw;
+	background-image: url(img/richtig2.png);
+	background-size: 100% ;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+.cloud1 {
+	position: absolute;
+	top: 30vw;
+	left: 20vw;
+	width: 15vw;
+	height: 14vw;
+	background-image: url(img/wolke1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;	
+}
+
+.cloud2 {
+	position: absolute;
+	top: 30vw;
+	left: 45vw;
+	width: 15vw;
+	height: 14vw;
+	background-image: url(img/wolke2.png);
+	background-size: 100%;
+	background-repeat: no-repeat;	
+}
+
+.pfeilrechts {
+	width: 5vw;‚
+	padding-left: 1vw;
+	left: 1vw;	
+
+}
+
+.home {
+	width: 10vw;‚
+	padding-left: 1vw;
+	left: 1vw;	
+}

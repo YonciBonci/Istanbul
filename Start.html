@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Turkey</title>
+		<meta charset="utf-8">
+		<link href="startstyle.css" rel="stylesheet" type="text/css">
+		
+    </head>
+	<body>
+			
+		<img class="absolute flagge" src="img/flagge.png" />
+		
+		<div class="absolute banner">TURKEY</div>
+		
+		<img class="absolute tv" src="img/tv.png"/>
+		
+	    <video class="video" id="videoID">
+        	<source src="video/turkey.mp4" type="video/mp4" />
+        </video>
+
+        <button class="btnPlay">Play/Pause</button>
+<!--        <button class="btnStop">Pause</button>-->
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+   
+    <script type="text/javascript">
+        
+        
+        var video = document.getElementById('videoID'); //or
+        var video = $('#videoID').get(0); //or
+        var video = $('#videoID')[0];
+
+        //return a jQuery object
+        var video = $('#videoID');
+        
+        
+         
+            $( document ).ready(function() {
+                
+                
+                    $(".btnPlay").on("click",function() {
+
+                        
+                            if(video[0].paused) {
+                                video[0].play();
+                            }
+                            else {
+                                video[0].pause();
+                            }
+                            return false;
+
+                    })
+                
+                
+                
+            }); 
+    
+        
+    </script>    
+        
+
+		
+		<img class="absolute home" src="img/home.png"/>
+		
+		<button2 class="absolute start">START</button2>
+	
+		     
+                
+	
+	</body>
+
+</html>	

@@ -1,0 +1,88 @@
+@font-face {
+	font-family: maybe;
+	src: url(fonts/MaybeMaybeNot.ttf);
+}
+
+html,body {
+	font-family: 'maybe',arial,sans-serif	;
+	background-color: #cccccc;
+	background-image: url(img/wellen.png);
+	margin: 0;
+	background-size: cover;
+	background-position: center center;
+}
+
+.absolute {position: absolute;
+}
+
+/**** Elemente */
+.flagge {
+	width: 30vw;
+	top:20vw;
+	right: 5vw;	
+}
+
+.banner {
+	font-size: 5vw;
+	top: 1vw;
+	padding: 5vw;
+	right: 5vw;	
+	text-align: center;
+	background-image: url(img/layer.png);
+	background-size: 100% 100%;
+}
+
+.tv {
+	width: 60vw;
+	#height: 35vw;
+	left: 3vw;
+	top: 3vw;
+	background-size: 100% 100%;
+	z-index: 100;
+	position: fixed;
+
+}
+
+.video{
+	position: fixed;
+	z-index: 99;
+	left: 20vw;
+	top: 10vw;
+    width: 40vw;
+    height: auto;
+}
+
+button {
+    background: transparent; /* BKGR weg */
+    border: none; /* kein Rand */
+    color: white;
+    background-color: #33ccff;   
+    border-radius: 2vw;
+	left: 300px
+}
+
+.btnPlay{
+	left: 35vw;
+	top: 40vw;
+	z-index: 101;
+	position: fixed;
+
+}
+
+.start {
+	color: #33ccff;
+	bottom: 1vw;
+	padding: 2vw;
+	right: 5vw;	
+	text-align: center;
+	background-image: url(img/layer.png);
+	background-size: 100% 100%;
+}
+
+.home {
+	width: 10vw;‚
+	padding-left: 1vw;
+	left: 1vw;
+	bottom: 1vw;	
+}
+
